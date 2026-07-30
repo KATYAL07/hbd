@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><plasmo-csui id="g0-textarea-recorder"></plasmo-csui>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ennaflix - Who's watching?</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <style data-purpose="custom-styling">
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #141414;
+      /* Netflix standard dark background */
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      color: #E50914;
+      /* Netflix red */
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      /* Arc effect simulation (basic CSS) */
+      display: inline-block;
+      transform: scaleY(1.2);
+    }
+
+    .profile-avatar {
+      width: 152px;
+      height: 152px;
+      border-radius: 4px;
+      object-fit: cover;
+      transition: outline 0.1s ease-in-out;
+      outline: 0 solid white;
+    }
+
+    .profile-item:hover .profile-avatar {
+      outline-width: 4px;
+    }
+
+    .profile-name {
+      color: #808080;
+      font-size: 1.25rem;
+      margin-top: 0.8rem;
+      transition: color 0.1s ease-in-out;
+    }
+
+    .profile-item:hover .profile-name {
+      color: white;
+    }
+
+    .kids-avatar {
+      background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-radius: 4px;
+    }
+
+    .manage-btn {
+      border: 1px solid grey;
+      color: grey;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.25rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+      margin-top: 4rem;
+    }
+
+    .manage-btn:hover {
+      color: white;
+      border-color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-[#141414] text-white h-screen flex flex-col items-center justify-center font-sans overflow-hidden">
+  <!-- BEGIN: MainContent -->
+  <main class="flex flex-col items-center w-full max-w-5xl px-4 animate-fade-in">
+    <!-- Logo -->
+    <h1 class="logo font-bold text-red-600 tracking-tighter mb-4 text-6xl md:text-8xl"
+      style="display: inline-block; transform: perspective(500px) rotateX(15deg) scaleY(1.2); transform-origin: center bottom; filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 4px 4px);">
+      ENNAFLIX
+    </h1>
+    <!-- Subtitle -->
+    <h2 class="text-3xl md:text-5xl font-medium mb-8 text-center">
+      Who's watching?
+    </h2>
+    <!-- Profiles Grid -->
+    <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 w-full max-w-4xl mx-auto">
+      <!-- Profile 1: Enna -->
+      <button class="profile-item flex flex-col items-center group focus:outline-none w-32 md:w-40">
+        <div class="relative w-full aspect-square mb-4">
+          <img alt="Enna"
+            class="profile-avatar w-full h-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://lh3.googleusercontent.com/aida/AP1WRLtUdP7Vb6LSqUH-_cqDN9uXSa_Tyz7ZxRW2fSduY-Obm0NtpcPTLyU0Gg1L_QhRm9SiFPNzNA5I78dr-QhZ1GdwXpuMeSYXW7UhScletupFapPMY1RC0IHXi-kxQLv247QCIOd2yMmFxxrwuf-KTR6NNAz54Hlb0jCnovDG6NC4h-JRrNshdY00UJa0M-7RkeDO8Uk_WMK0kkJ_LhQGqdk5torew07gsJL0U0pgJIBCBNfkVJNL1Uya0NY">
+        </div>
+        <span
+          class="profile-name block text-gray-400 group-hover:text-white text-lg md:text-xl transition-colors duration-200">Enna</span>
+      </button>
+      <!-- Profile 2: Friend -->
+      <button class="profile-item flex flex-col items-center group focus:outline-none w-32 md:w-40">
+        <div class="relative w-full aspect-square mb-4">
+          <img alt="Friend"
+            class="profile-avatar w-full h-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://lh3.googleusercontent.com/aida/AP1WRLtV2lgW4KezwRgsLxRkmhFzw2TTMttDT98J1eRbCfTNbSszl_mpEa_RsVx9qwBAQiXFa3E29Lgk4aVHeh4ZJ-qqTRc0cdV9dG35Plrg5-IZjs-jj8rdcydG9C8ROKkRXXhPOY7BXHb81nYidCpiE65QIFHuRnUiPNALMKpI_aS_XII3uNSrGfdRe856TRY5GeyJUB2be73flLDTM0wKNO-tpJYEo-nYEb0SajkiOU_Kcq7vvwBYMBrhb_g">
+        </div>
+        <span
+          class="profile-name block text-gray-400 group-hover:text-white text-lg md:text-xl transition-colors duration-200">murgi
+          bhai</span>
+      </button>
+      <!-- Profile 3: Family -->
+      <button class="profile-item flex flex-col items-center group focus:outline-none w-32 md:w-40">
+        <div class="relative w-full aspect-square mb-4">
+          <img alt="Family"
+            class="profile-avatar w-full h-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
+            src="https://lh3.googleusercontent.com/aida/AP1WRLt6heXwF1bH80BBOYbE-6Glb9kxE2Q_f1UcAT0LSs31IagD-SMmHa_USB_4BDpfyd5J7HHaLiVbH0V2s_JahuIMzHIIZYB60TEbBlrHYW49adxQCqSrRv4kSvjAjPt1EkzJzhhTeRUiZzwquEtmUiEf2ieFORu5KOAAXdwN2sAM1Z_64ayByDfSJOXiHkrOLIEh8H8pMp_h8Hgdxy6Uyxy3uyC5taSMZG5qdPlaDIhTRRPdM7bbsR8tPPE">
+        </div>
+        <span
+          class="profile-name block text-gray-400 group-hover:text-white text-lg md:text-xl transition-colors duration-200">okay
+          jaanu hater</span>
+      </button>
+      <!-- Profile 4: Kids -->
+      <button class="profile-item flex flex-col items-center group focus:outline-none w-32 md:w-40">
+        <div
+          class="relative w-full aspect-square mb-4 rounded-md profile-avatar kids-avatar group-hover:scale-105 transition-all duration-300 shadow-lg border border-transparent group-hover:border-white">
+          Tony Paji
+        </div>
+        <span
+          class="profile-name block text-gray-400 group-hover:text-white text-lg md:text-xl transition-colors duration-200">Tony
+          Paji</span>
+      </button>
+    </div>
+    <!-- Manage Profiles Button -->
+    <div class="mt-8">
+      <button
+        class="manage-btn uppercase px-6 py-2 border border-gray-500 text-gray-400 hover:text-white hover:border-white transition-colors duration-200 text-sm md:text-base tracking-widest bg-transparent">
+        Manage Profiles
+      </button>
+    </div>
+  </main>
+  <!-- END: MainContent -->
+
+
+</body>
+
+</html>

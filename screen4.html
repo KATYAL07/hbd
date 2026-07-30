@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>ENNAFLIX - Happy Birthday Enna!</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700;800&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "tertiary-container": "#727272",
+                                                "primary-fixed": "#ffdad5",
+                                                "on-primary-container": "#fff7f6",
+                                                "inverse-primary": "#c0000c",
+                                                "secondary": "#c8c6c5",
+                                                "inverse-on-surface": "#2f3131",
+                                                "on-tertiary-fixed": "#1b1b1b",
+                                                "surface-bright": "#37393a",
+                                                "primary-container": "#e50914",
+                                                "background": "#121414",
+                                                "secondary-fixed-dim": "#c8c6c5",
+                                                "on-primary": "#690003",
+                                                "tertiary-fixed": "#e2e2e2",
+                                                "outline-variant": "#5e3f3b",
+                                                "inverse-surface": "#e2e2e2",
+                                                "secondary-container": "#4a4949",
+                                                "surface-container-low": "#1a1c1c",
+                                                "on-tertiary-container": "#f8f8f8",
+                                                "surface-container-high": "#282a2b",
+                                                "on-tertiary": "#303030",
+                                                "error-container": "#93000a",
+                                                "on-error": "#690005",
+                                                "tertiary": "#c6c6c6",
+                                                "primary-fixed-dim": "#ffb4aa",
+                                                "on-surface-variant": "#e9bcb6",
+                                                "on-secondary-fixed": "#1c1b1b",
+                                                "on-secondary-container": "#bab8b7",
+                                                "error": "#ffb4ab",
+                                                "on-secondary-fixed-variant": "#474646",
+                                                "on-primary-fixed": "#410001",
+                                                "surface-variant": "#333535",
+                                                "primary": "#ffb4aa",
+                                                "surface-container-highest": "#333535",
+                                                "surface-container": "#1e2020",
+                                                "on-tertiary-fixed-variant": "#474747",
+                                                "surface-container-lowest": "#0c0f0f",
+                                                "on-background": "#e2e2e2",
+                                                "secondary-fixed": "#e5e2e1",
+                                                "surface-dim": "#121414",
+                                                "on-error-container": "#ffdad6",
+                                                "tertiary-fixed-dim": "#c6c6c6",
+                                                "outline": "#af8782",
+                                                "on-secondary": "#313030",
+                                                "on-primary-fixed-variant": "#930007",
+                                                "surface": "#121414",
+                                                "on-surface": "#e2e2e2",
+                                                "surface-tint": "#ffb4aa"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "container-margin-mobile": "20px",
+                                                "unit": "4px",
+                                                "gutter": "8px",
+                                                "section-gap": "48px",
+                                                "container-margin-desktop": "60px"
+                                        },
+                                        "fontFamily": {
+                                                "display-lg-mobile": [
+                                                        "Geist"
+                                                ],
+                                                "display-lg": [
+                                                        "Geist"
+                                                ],
+                                                "headline-sm": [
+                                                        "Geist"
+                                                ],
+                                                "body-md": [
+                                                        "Geist"
+                                                ],
+                                                "body-lg": [
+                                                        "Geist"
+                                                ],
+                                                "label-sm": [
+                                                        "Geist"
+                                                ],
+                                                "label-bold": [
+                                                        "Geist"
+                                                ],
+                                                "headline-md": [
+                                                        "Geist"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "display-lg-mobile": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "1.1",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "800"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "64px",
+                                                        {
+                                                                "lineHeight": "1.1",
+                                                                "letterSpacing": "-0.04em",
+                                                                "fontWeight": "800"
+                                                        }
+                                                ],
+                                                "headline-sm": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.5",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "label-bold": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                body {
+                        font-family: 'Geist', sans-serif;
+                        background-color: #121414;
+                        /* Default to background token */
+                        color: #e2e2e2;
+                        overflow-x: hidden;
+                }
+
+                /* Hide scrollbar for carousels */
+                .hide-scrollbar::-webkit-scrollbar {
+                        display: none;
+                }
+
+                .hide-scrollbar {
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
+                }
+
+                .hero-gradient {
+                        background: linear-gradient(0deg, #121414 0%, rgba(18, 20, 20, 0.5) 40%, transparent 100%);
+                }
+
+                .card-hover-fx {
+                        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+                }
+
+                .card-hover-fx:hover {
+                        transform: scale(1.05) translateY(-5px);
+                        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.1);
+                        z-index: 20;
+                }
+        </style>
+</head>
+
+<body class="bg-background text-on-surface antialiased">
+        <!-- Sidebar Navigation (Desktop) -->
+        <nav
+                class="fixed left-0 top-0 h-full w-[80px] bg-black/90 backdrop-blur-xl z-[60] flex flex-col items-center py-6 gap-8 border-r border-surface-container-highest hidden md:flex">
+                <a class="text-on-surface hover:scale-110 transition-transform duration-300" href="#">
+                        <span class="material-symbols-outlined text-[32px]">search</span>
+                </a>
+                <a class="text-primary-container relative group" href="#">
+                        <span class="material-symbols-outlined text-[32px]"
+                                style="font-variation-settings: 'FILL' 1;">home</span>
+                        <div
+                                class="absolute -left-1 top-1/2 -translate-y-1/2 w-1 h-8 bg-primary-container rounded-r-full">
+                        </div>
+                </a>
+                <a class="text-secondary hover:text-on-surface hover:scale-110 transition-all duration-300" href="#">
+                        <span class="material-symbols-outlined text-[32px]">movie</span>
+                </a>
+                <a class="text-secondary hover:text-on-surface hover:scale-110 transition-all duration-300" href="#">
+                        <span class="material-symbols-outlined text-[32px]">tv</span>
+                </a>
+                <a class="text-secondary hover:text-on-surface hover:scale-110 transition-all duration-300 mt-auto"
+                        href="#">
+                        <span class="material-symbols-outlined text-[32px]">trending_up</span>
+                </a>
+                <a class="text-secondary hover:text-on-surface hover:scale-110 transition-all duration-300" href="#">
+                        <span class="material-symbols-outlined text-[32px]">add</span>
+                </a>
+                <a class="text-secondary hover:text-on-surface hover:scale-110 transition-all duration-300" href="#">
+                        <span class="material-symbols-outlined text-[32px]">shuffle</span>
+                </a>
+        </nav>
+        <!-- TopNavBar -->
+        <header
+                class="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-xl bg-gradient-to-b from-black/80 to-transparent flex justify-between items-center px-container-margin-mobile md:px-container-margin-desktop md:pl-[140px] h-20">
+                <div class="flex items-center gap-12">
+                        <a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg font-black text-primary-container tracking-tighter"
+                                href="/">
+                                ENNAFLIX
+                        </a>
+                        <nav class="hidden lg:flex items-center gap-6 font-body-md text-body-md">
+                                <a class="text-on-surface font-bold hover:scale-105 transition-transform duration-200"
+                                        href="#">Home</a>
+                                <a class="text-secondary dark:text-secondary hover:text-on-surface hover:scale-105 transition-all duration-300"
+                                        href="#">TV Shows</a>
+                                <a class="text-secondary dark:text-secondary hover:text-on-surface hover:scale-105 transition-all duration-300"
+                                        href="#">Movies</a>
+                                <a class="text-secondary dark:text-secondary hover:text-on-surface hover:scale-105 transition-all duration-300"
+                                        href="#">New &amp; Popular</a>
+                                <a class="text-secondary dark:text-secondary hover:text-on-surface hover:scale-105 transition-all duration-300"
+                                        href="#">My List</a>
+                        </nav>
+                </div>
+                <div class="flex items-center gap-6">
+                        <button class="text-on-surface hover:scale-110 transition-transform duration-300 ease-in-out">
+                                <span class="material-symbols-outlined">notifications</span>
+                        </button>
+                        <div
+                                class="w-10 h-10 rounded rounded-DEFAULT overflow-hidden border-2 border-transparent hover:border-on-surface transition-colors cursor-pointer">
+                                <img alt="Enna's Birthday Profile" class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida/AP1WRLtUdP7Vb6LSqUH-_cqDN9uXSa_Tyz7ZxRW2fSduY-Obm0NtpcPTLyU0Gg1L_QhRm9SiFPNzNA5I78dr-QhZ1GdwXpuMeSYXW7UhScletupFapPMY1RC0IHXi-kxQLv247QCIOd2yMmFxxrwuf-KTR6NNAz54Hlb0jCnovDG6NC4h-JRrNshdY00UJa0M-7RkeDO8Uk_WMK0kkJ_LhQGqdk5torew07gsJL0U0pgJIBCBNfkVJNL1Uya0NY" />
+                        </div>
+                </div>
+        </header>
+        <!-- Main Content -->
+        <main class="md:ml-[80px] pb-section-gap">
+                <!-- Hero Section -->
+                <section class="relative w-full h-[85vh] min-h-[600px] flex items-end">
+                        <!-- Background Image -->
+                        <div class="absolute inset-0 z-0">
+                                <div class="absolute inset-0 bg-black/40 z-10"></div> <!-- Dimmer -->
+                                <div class="absolute inset-0 hero-gradient z-20"></div> <!-- Bottom Gradient -->
+                                <div
+                                        class="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background to-transparent z-20 hidden md:block">
+                                </div> <!-- Right Edge Gradient -->
+                                <img alt="Hero Background" class="w-full h-full object-cover object-top"
+                                        src="https://lh3.googleusercontent.com/aida/AP1WRLu3ZwkskmZW19zkZjf4kZHKB1BVRKKBbrHXkI5ia6oSgw3h_O8L6XgnDXRYQpEW8L6EAB_H5A5GIgScF6VV0y3ZS9EOCHeoFOpf2ikqGg6YVP3pNGiZ4nEdkoZPGFWmVK3jvDF_LaTBPbRZwDWAHT7CUIIzIDue6SqTiPY3atziWEzqKA-tNeSYPQkKnoNFRgEP-IG_3OCsLteV5aueoiysA0SionEHVAsB0BvJWHHA4xPKtXyvX4xyNGk" />
+                        </div>
+                        <!-- Hero Content -->
+                        <div
+                                class="relative z-30 w-full px-container-margin-mobile md:px-container-margin-desktop pb-24 md:pb-32 max-w-4xl">
+                                <div class="flex items-center gap-2 mb-4">
+                                        <span class="text-primary-container font-black tracking-widest text-sm">N</span>
+                                        <span
+                                                class="text-secondary font-label-bold tracking-widest uppercase text-xs">SERIES</span>
+                                </div>
+                                <h1
+                                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg font-black text-on-surface tracking-tighter leading-none mb-6">
+                                        HAPPY BIRTHDAY ENNA: <br class="hidden md:block" />THE MOVIE
+                                </h1>
+                                <div class="flex items-center gap-4 text-body-md font-body-md text-on-surface mb-8">
+                                        <div class="flex items-center gap-1 bg-surface-container/50 px-2 py-1 rounded">
+                                                <span class="text-yellow-500 font-bold">IMDb</span>
+                                                <span>10/10</span>
+                                        </div>
+                                        <span>19 YEAR</span>
+                                        <span class="text-primary-container font-bold">500K+ Streams</span>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-4">
+                                        <button
+                                                class="bg-on-surface text-background font-label-bold text-label-bold px-8 py-3 rounded flex items-center gap-2 hover:bg-on-surface/90 transition-colors">
+                                                <span class="material-symbols-outlined"
+                                                        style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                Play
+                                        </button>
+                                        <button
+                                                class="bg-surface-variant/70 backdrop-blur-md text-on-surface font-label-bold text-label-bold px-8 py-3 rounded flex items-center gap-2 hover:bg-surface-variant transition-colors border border-surface-container-highest">
+                                                <span class="material-symbols-outlined">info</span>
+                                                Watch Trailer
+                                        </button>
+                                </div>
+                        </div>
+                </section>
+                <!-- Video Rows -->
+                <div
+                        class="px-container-margin-mobile md:px-container-margin-desktop flex flex-col gap-section-gap -mt-12 relative z-40">
+                        <!-- Row 1: TOP 10 IN INDIA TODAY -->
+                        <section>
+                                <h2
+                                        class="font-headline-sm text-headline-sm text-on-surface mb-4 font-bold tracking-tight">
+                                        TOP 10 IN INDIA TODAY</h2>
+                                <div
+                                        class="flex overflow-x-auto gap-gutter hide-scrollbar pb-8 pt-4 -mt-4 px-4 -mx-4 snap-x snap-mandatory">
+                                        <!-- Card 1 -->
+                                        <div
+                                                class="relative flex-none w-[80vw] md:w-[400px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="Enna's Epic Adventures" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLsyiCPK_adcBk04zkOwWsoDkCELJd7VDg96Lkbf3Ub0_DamkgCq0B_eLEDXqTKwczyLcTQwf_dPuDSAaSUSwbz2lHVmWWixLahgP5R-GceVs8VDuYg1qeNQXu1t-xQfhgh58mUywqAtbfg5oJWenQ-gAMH9_3oCzPlr4P3Cza-YTcqnyb58uAKYPmzmPQpnMs-ewIxrxjcEZj1V93_mhnn5N-Vr8OENZRynu3Y_f-me-3wLg8HJ3qDRLhY" />
+                                                <!-- Top 10 Badge overlay -->
+                                                <div
+                                                        class="absolute top-0 right-0 w-16 h-24 overflow-hidden pointer-events-none">
+                                                        <div
+                                                                class="absolute -right-8 -top-8 text-[120px] font-black text-white/20 leading-none">
+                                                                1</div>
+                                                </div>
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-bold text-on-surface mb-2">Enna's Epic
+                                                                Adventures</h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-8 h-8 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[20px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                                <button
+                                                                        class="w-8 h-8 border border-secondary rounded-full flex items-center justify-center text-on-surface hover:border-on-surface transition-colors">
+                                                                        <span
+                                                                                class="material-symbols-outlined text-[16px]">add</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                                <!-- Progress Bar -->
+                                                <div
+                                                        class="absolute bottom-0 left-0 w-full h-[2px] bg-surface-container-highest">
+                                                        <div class="h-full bg-primary-container w-[45%]"></div>
+                                                </div>
+                                        </div>
+                                        <!-- Card 2 -->
+                                        <div
+                                                class="relative flex-none w-[80vw] md:w-[400px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="Chill with Enna" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLu3ZwkskmZW19zkZjf4kZHKB1BVRKKBbrHXkI5ia6oSgw3h_O8L6XgnDXRYQpEW8L6EAB_H5A5GIgScF6VV0y3ZS9EOCHeoFOpf2ikqGg6YVP3pNGiZ4nEdkoZPGFWmVK3jvDF_LaTBPbRZwDWAHT7CUIIzIDue6SqTiPY3atziWEzqKA-tNeSYPQkKnoNFRgEP-IG_3OCsLteV5aueoiysA0SionEHVAsB0BvJWHHA4xPKtXyvX4xyNGk" />
+                                                <div
+                                                        class="absolute top-0 right-0 w-16 h-24 overflow-hidden pointer-events-none">
+                                                        <div
+                                                                class="absolute -right-8 -top-8 text-[120px] font-black text-white/20 leading-none">
+                                                                2</div>
+                                                </div>
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-bold text-on-surface mb-2">Chill with Enna
+                                                        </h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-8 h-8 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[20px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                                <button
+                                                                        class="w-8 h-8 border border-secondary rounded-full flex items-center justify-center text-on-surface hover:border-on-surface transition-colors">
+                                                                        <span
+                                                                                class="material-symbols-outlined text-[16px]">add</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                                <!-- Progress Bar -->
+                                                <div
+                                                        class="absolute bottom-0 left-0 w-full h-[2px] bg-surface-container-highest">
+                                                        <div class="h-full bg-primary-container w-[10%]"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </section>
+                        <!-- Row 2: Trending Now: For ENNA -->
+                        <section>
+                                <h2
+                                        class="font-headline-sm text-headline-sm text-on-surface mb-4 font-bold tracking-tight">
+                                        Trending Now: For ENNA</h2>
+                                <div
+                                        class="flex overflow-x-auto gap-gutter hide-scrollbar pb-8 pt-4 -mt-4 px-4 -mx-4 snap-x snap-mandatory">
+                                        <!-- Card 1 -->
+                                        <div
+                                                class="relative flex-none w-[60vw] md:w-[280px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="ENNA'S COFFEE CHRONICLES" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLuyo207broAOXcwaBtYzuPqMvdSPC5UhrMaFNnopTVhv6nmf5yPaY82KljOrH7SZSeCeyp5GvANKTKD1QFm5mG0G1Apc2uSGJNSun8-CEvxoKLSZ8BNf8CNm1e85CSVuM9x_LBk13RqUYxqaJN_UZBEEwZ2YsMVtNEiSSdamougt6inPB2Tbn-99mz_ZaQTpROSCWliKsHd1HzRfAieWIUimYewrVbveycBhBc8-aLVK--0qw1q7w-_4RA" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-sm text-on-surface mb-2 truncate">ENNA'S
+                                                                COFFEE CHRONICLES</h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-6 h-6 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[16px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Card 2 -->
+                                        <div
+                                                class="relative flex-none w-[60vw] md:w-[280px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="ENNA'S TECH REVOLUTION" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLsKffhF1mQGcB60sbIRgwe-wAdzKR8XE9eUwvtmTn2QhT1xJwwgQzDPU0-TUByJGxZUVWMPE5N8wY8pC57azHFracnbjeFOjCJMA7PTB4AQu54ISVMQScCD8rPL_uUAbjvBBhdUhVuygJ8FPVYa6xWgfWl9jxrSR9W-rme3K6svbJL4u_oBYORcwLKAXV60y1e3TXBlZlZLY8SM2Pfc6_ka1D4FE_9tWOrQAhaOAYWSVO3HGoft0ju0vg" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-sm text-on-surface mb-2 truncate">ENNA'S
+                                                                TECH REVOLUTION</h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-6 h-6 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[16px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Card 3 -->
+                                        <div
+                                                class="relative flex-none w-[60vw] md:w-[280px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="ENNA IN THE WILD" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLviAovPqEpot1jH32UCsPql_u1xwL7jvrqZl3Xcf5hKnJdxJpy6hCbQ4H0aR7K7RUwDL4YwFZdUoVe9kChBSfFJaLgi9ChXwgh_uKwOS-for1QmhoBA-MylpMmv1fDqgqikcxHKppGM2DDy40Y4cbeN3M1c9BcQzDvEjowvCjDMFIUAsouluSD2emVUjlS9IHc4LUYwI7bzPrk1EYQfIv50IszKmivHbpK-7AkMC8YuIIfgOU9QYFfbxSY" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-sm text-on-surface mb-2 truncate">ENNA IN
+                                                                THE WILD</h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-6 h-6 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[16px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Card 4 -->
+                                        <div
+                                                class="relative flex-none w-[60vw] md:w-[280px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="ENNA'S MIDNIGHT MYSTERY" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLskZ3FIe6NoHGO8yAfYet4MWOg8ShSM2sqzXJ_CKifffa4uvIord3xTWObCFyUwAL1arTsFxtlVytsMoA-zhHL8xZkTr68xw1aa2nQHV9v5jOoVI0Sf1cpuSVkB2LOcjnjoAbTB9BbgSzhYx5EXXubnhs2QAme_Fu8ZB0kSdt5XH4EQEeeTPuvMNSt4P-Efjqpoeg_tLRmx-0KyKezDo67dqjDNrCJxcD20xWDWgdV1K8s6SK7K57YM5A" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-sm text-on-surface mb-2 truncate">ENNA'S
+                                                                MIDNIGHT MYSTERY</h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-6 h-6 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[16px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Card 5 -->
+                                        <div
+                                                class="relative flex-none w-[60vw] md:w-[280px] aspect-[1.79] rounded-lg overflow-hidden snap-start card-hover-fx group cursor-pointer">
+                                                <img alt="ENNA'S KITCHEN CHAOS" class="w-full h-full object-cover"
+                                                        src="https://lh3.googleusercontent.com/aida/AP1WRLtA1XpU_j1bUy1Vx7dNDPww5rZBVOrgoixbVC2n_ItzveQY1Lbt2uNfyQphGcYT9jYpyB6w3JA9Vr3Oh4_PbYxx2Ngf-I9gHL66IaSBbHimQob6uZ-1tUL3LYM73TxgPtxBXXUFJAGP7PBbXpm6M7Np7lJNtJKxbhWG86qh7KeQy8O20FEErTjd8cha5JsRcTdjFBgYups8hsdZLEb7VsR0pegHCpKx4VA4B9pLVqKPNSYfcuNgPLENtg4" />
+                                                <div
+                                                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                        <h3 class="font-label-sm text-on-surface mb-2 truncate">ENNA'S
+                                                                KITCHEN CHAOS</h3>
+                                                        <div class="flex items-center gap-2">
+                                                                <button
+                                                                        class="w-6 h-6 bg-on-surface rounded-full flex items-center justify-center text-background hover:bg-surface-variant hover:text-on-surface transition-colors">
+                                                                        <span class="material-symbols-outlined text-[16px]"
+                                                                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </section>
+                </div>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full py-12 border-t border-surface-container-highest bg-background md:pl-[80px]">
+                <div class="max-w-[1000px] mx-auto px-[20px] md:px-[60px]">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Audio Description</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Help Center</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Gift Cards</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Media Center</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Investor Relations</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Jobs</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Terms of Use</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Privacy</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Legal Notices</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Cookie Preferences</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Corporate Information</a>
+                                <a class="font-label-sm text-label-sm text-on-secondary-container hover:underline hover:text-on-surface transition-colors duration-200"
+                                        href="#">Contact Us</a>
+                        </div>
+                        <p class="font-label-sm text-label-sm text-on-secondary-container">© 1997-2024 Ennaflix, Inc.
+                        </p>
+                </div>
+        </footer>
+</body>
+
+</html>
