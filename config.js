@@ -49,7 +49,7 @@ const AppConfig = {
             id: 'family-bhaiya',
             title: "Bhaiya",
             image: 'brother.png',
-            videoUrl: '',
+            videoUrl: 'bhaiya.mp4',
             category: 'family'
         },
         {
@@ -78,7 +78,7 @@ const AppConfig = {
         {
             id: 'friend-trisha',
             title: "trisha",
-            image: 'trishap.png',
+            image: 'trishapho.png',
             videoUrl: 'trishavidup.mp4',
             category: 'friends'
         },
@@ -92,7 +92,7 @@ const AppConfig = {
         {
             id: 'friend-anushka',
             title: "anusheka",
-            image: 'anusheka.png',
+            image: 'anushekapho.png',
             videoUrl: 'anushekavid.mp4',
             category: 'friends'
         },
@@ -120,14 +120,14 @@ const AppConfig = {
         {
             id: 'friend-hitika',
             title: "Hitika",
-            image: '',
+            image: 'hitika.png',
             videoUrl: 'hitika.mp4',
             category: 'friends'
         },
         {
             id: 'friend-bhavya',
             title: "Bhavya",
-            image: 'https://lh3.googleusercontent.com/aida/AP1WRLskZ3FIe6NoHGO8yAfYet4MWOg8ShSM2sqzXJ_CKifffa4uvIord3xTWObCFyUwAL1arTsFxtlVytsMoA-zhHL8xZkTr68xw1aa2nQHV9v5jOoVI0Sf1cpuSVkB2LOcjnjoAbTB9BbgSzhYx5EXXubnhs2QAme_Fu8ZB0kSdt5XH4EQEeeTPuvMNSt4P-Efjqpoeg_tLRmx-0KyKezDo67dqjDNrCJxcD20xWDWgdV1K8s6SK7K57YM5A',
+            image: 'bhavyaph.png',
             videoUrl: 'bhavya.mp4',
             category: 'friends'
         },
